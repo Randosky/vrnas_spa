@@ -3,12 +3,22 @@ import "../../style/HomepageStyle/Homepage.css"
 import {observer} from "mobx-react-lite";
 import Header from "../../ui/header/header";
 import HomepageHero from "./HomepageHero";
+import HomepageAbout from "./HomepageAbout";
+import BgGridSvg from "../../svg/BgGridSvg";
+import HeaderAngleSvg from "../../svg/HeaderAngleSvg";
 
 const Homepage = observer(() => {
     return (
         <main className="homepage">
+            <div className="homepage__angle">
+                <HeaderAngleSvg/>
+            </div>
+            <div className="homepage__grid">
+                <BgGridSvg/>
+            </div>
             <Header/>
             <HomepageHero/>
+            <HomepageAbout/>
         </main>
     );
 })

@@ -7,9 +7,6 @@ import HeaderAngleSvg from "../../svg/HeaderAngleSvg";
 const Header = observer(() => {
     return (
         <header className="homepage__header">
-            <div className="header__angle">
-                <HeaderAngleSvg/>
-            </div>
             <div className="header__container container">
                 <LogoSvg/>
                 <ul className="header__links">
