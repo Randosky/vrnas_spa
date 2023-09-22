@@ -6,6 +6,8 @@ import HomepageHero from "./HomepageHero";
 import HomepageAbout from "./HomepageAbout";
 import BgGridSvg from "../../svg/BgGridSvg";
 import HeaderAngleSvg from "../../svg/HeaderAngleSvg";
+import HomepageService from "./HomepageService";
+import HomepageWhyChooseUs from "./HomepageWhyChooseUs";
 
 const Homepage = observer(() => {
     return (
@@ -13,6 +15,8 @@ const Homepage = observer(() => {
             <Header/>
             <HomepageHero/>
             <HomepageAbout/>
+            <HomepageService/>
+            <HomepageWhyChooseUs/>
         </main>
     );
 })
