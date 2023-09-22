@@ -16,6 +16,9 @@ const HomepageHero = observer(
         return (
             <section className="homepage__hero">
                 <div className="hero__container container">
+                    <div className="hero__grid">
+                        <BgGridSvg/>
+                    </div>
                     <div className="hero__main">
                         <div className="hero__content">
                             <h2 className="hero__title" data-aos="fade-up" data-aos-duration="1000">

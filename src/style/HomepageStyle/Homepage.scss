@@ -25,15 +25,16 @@ $grey2: #d1d1d1;
   background-color: $black100;
   padding-bottom: 47px;
   position: absolute;
+  width: 100%;
 }
 
-.homepage__grid{
+.hero__grid{
   position: absolute;
-  top: 284px;
+  top: 170px;
   left: 0;
 }
 
-.homepage__angle {
+.header__angle {
   position: absolute;
   right: 0;
   top: 0;
@@ -46,7 +47,7 @@ $grey2: #d1d1d1;
 // Header
 
 .homepage__header {
-  margin-bottom: 44px;
+  margin-bottom: 13px;
 }
 
 .header__container {
@@ -145,12 +146,12 @@ $grey2: #d1d1d1;
 // Hero
 
 .homepage__hero {
-  position: relative;
   margin-bottom: 120px;
 }
 
 .hero__container {
   width: 100%;
+  position: relative;
 }
 
 .hero__main{

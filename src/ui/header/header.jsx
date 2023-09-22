@@ -8,6 +8,9 @@ const Header = observer(() => {
     return (
         <header className="homepage__header">
             <div className="header__container container">
+                <div className="header__angle">
+                    <HeaderAngleSvg/>
+                </div>
                 <LogoSvg/>
                 <ul className="header__links">
                     <li className="links__link">
