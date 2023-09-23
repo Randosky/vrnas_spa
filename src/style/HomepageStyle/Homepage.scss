@@ -643,7 +643,7 @@ $grey2: #d1d1d1;
     transition: opacity 0.2s ease-in-out;
   }
 
-  &:hover::before{
+  &:hover::before {
     opacity: 1;
   }
 
@@ -668,3 +668,261 @@ $grey2: #d1d1d1;
 }
 
 // Why choose us
+
+.homepage__choose {
+  margin-bottom: 174px;
+}
+
+.choose__container {
+  @extend %flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.choose__left {
+  flex: 0 1 45%;
+}
+
+.choose__name {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2.24px;
+  color: transparent;
+  background-clip: text;
+  background-image: $linear;
+  width: fit-content;
+  margin-bottom: 12px;
+}
+
+.choose__title {
+  color: white;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 120.833%;
+  letter-spacing: -0.24px;
+  margin-bottom: 32px;
+}
+
+.choose__accordion{
+  width: 100%;
+}
+
+.accordion__item {
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 48px;
+  }
+}
+
+.accordion__header{
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  user-select: none;
+}
+
+.accordion__button{
+  position: relative;
+
+  &::before{
+    position: absolute;
+    right: 0;
+    top: 7px;
+    content: "";
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background-image: url("../../img/ExpandMoreSvg.svg");
+  }
+
+  &[aria-expanded='true']::before,
+  &[aria-selected='true']::before {
+    transform: rotate(180deg);
+  }
+}
+
+.accordion__panel{
+  margin-top: 12px;
+  font-size: 16px;
+  color: $grey2;
+  font-weight: 400;
+  line-height: 175%;
+
+  animation: fadein 0.4s ease-in-out;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.choose__image {
+  flex: 0 1 50%;
+  position: relative;
+  @extend %flex;
+  justify-content: flex-end;
+
+  img {
+    z-index: 100;
+    object-fit: contain;
+    position: relative;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 398.938px;
+    height: 496px;
+    flex-shrink: 0;
+    background: $black50;
+    bottom: 0;
+    left: 100px;
+  }
+
+  &::after {
+    content: "";
+    z-index: 10;
+    position: absolute;
+    bottom: 5%;
+    right: 15%;
+    height: 70%;
+    width: 60%;
+    background: linear-gradient(99deg, rgba(28, 196, 249, 0.80) 0.72%, rgba(254, 105, 254, 0.80) 90.69%);
+    filter: blur(100px);
+    transform: rotate(-60deg);
+    border-bottom-left-radius: 100%;
+  }
+}
+
+.choose__video {
+  width: 196px;
+  height: 128px;
+  position: absolute;
+  bottom: -24px;
+  right: 85px;
+  z-index: 1000;
+}
+
+// How to get started
+
+.homepage__start{
+  margin-bottom: 100px;
+}
+
+.start__container{
+  @extend %flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.start__name{
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2.24px;
+  text-transform: uppercase;
+  color: transparent;
+  background-image: $linear;
+  background-clip: text;
+  margin-bottom: 12px;
+  width: fit-content;
+}
+
+.start__title{
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 120.833%;
+  letter-spacing: -0.24px;
+  color: white;
+  text-align: center;
+  max-width: 879px;
+  margin-bottom: 48px;
+}
+
+.start__picture{
+  width: fit-content;
+  position: relative;
+  margin-bottom: 48px;
+
+  img{
+    object-fit: contain;
+  }
+}
+
+.start__videoVR{
+  position: absolute;
+  top: 52px;
+  left: 34px;
+  padding: 2px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: white;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.30);
+}
+
+.start__videoTitle{
+  font-size: 36px;
+  color: white;
+  font-weight: 500;
+  line-height: 122.222%;
+  letter-spacing: -0.72px;
+  position: absolute;
+  top: 88px;
+  left: 34px;
+}
+
+.start__playButton{
+  position: absolute;
+  top: 211px;
+  left: 550px;
+  cursor: pointer;
+}
+
+.start__button{
+  padding: 18px 38px;
+  background-color: transparent;
+  background-image: $linear;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 1.5px;
+  position: relative;
+  z-index: 100;
+
+  span {
+    position: relative;
+    z-index: 100;
+  }
+
+  &::before {
+    z-index: 1;
+    background: $linear;
+    filter: blur(20px);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+}
