@@ -1,7 +1,7 @@
 import React from 'react';
 import {observer} from "mobx-react-lite";
 import PlayButton2 from "../../svg/PlayButton2";
-import startBG from "../../img/StartBg.png";
+import startBG from "../../img/StartBg.png"
 
 const HowToStart = observer(() => {
     return (

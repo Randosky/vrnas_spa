@@ -9,6 +9,9 @@ import HeaderAngleSvg from "../../svg/HeaderAngleSvg";
 import HomepageService from "./HomepageService";
 import HomepageWhyChooseUs from "./HomepageWhyChooseUs";
 import HomepageHowToStart from "./HomepageHowToStart";
+import HomepageTestimonial from "./HomepageTestimonial";
+import HomepagePrice from "./HomepagePrice";
+import HomepagePartners from "./HomepagePartners";
 
 const Homepage = observer(() => {
     return (
@@ -19,6 +22,9 @@ const Homepage = observer(() => {
             <HomepageService/>
             <HomepageWhyChooseUs/>
             <HomepageHowToStart/>
+            <HomepageTestimonial/>
+            <HomepagePrice/>
+            <HomepagePartners/>
         </main>
     );
 })

@@ -9,7 +9,7 @@ import {
 } from 'react-accessible-accordion';
 import PlayButton from "../../svg/PlayButton";
 import ChooseVideo from "../../svg/ChooseVideo";
-import ChooseBg from "../../img/WhyChooseBg.png";
+import chooseBG from "../../img/WhyChooseBg.png";
 
 const HomepageWhyChooseUs = observer(() => {
     return (
@@ -74,7 +74,7 @@ const HomepageWhyChooseUs = observer(() => {
                 </div>
                 <div className="choose__image"
                      data-aos="fade-left" data-aos-duration="2000">
-                    <img src={ChooseBg} alt="man in vr glasses"/>
+                    <img src={chooseBG} alt="man in vr glasses"/>
                     <div className="choose__video">
                         <ChooseVideo/>
                         <div className="video__button">

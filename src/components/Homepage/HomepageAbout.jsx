@@ -1,8 +1,8 @@
 import React from 'react';
-import aboutUs from "../../img/AboutBg.png";
 import PlayButton from "../../svg/PlayButton";
 import AboutVideo from "../../svg/AboutVideo";
 import {observer} from "mobx-react-lite";
+import aboutBG from "../../img/AboutBg.png";
 
 const HomepageAbout = observer(
     () => {
@@ -10,7 +10,7 @@ const HomepageAbout = observer(
             <section className="homepage__about">
                 <div className="about__container container">
                     <div className="about__image" data-aos="fade-right" data-aos-duration="1800">
-                        <img src={aboutUs} alt="man in glasses"/>
+                        <img src={aboutBG} alt="man in glasses"/>
                         <div className="about__video">
                             <AboutVideo/>
                             <div className="video__button">

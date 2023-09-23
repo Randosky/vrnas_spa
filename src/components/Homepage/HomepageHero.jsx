@@ -1,15 +1,15 @@
 import React from 'react';
 import {observer} from "mobx-react-lite";
-import client1 from "../../img/Client1.svg"
-import client2 from "../../img/Client2.svg"
-import client3 from "../../img/Client3.svg"
-import heroBg from "../../img/HeroBg.png"
 import PreviewVideo from "../../svg/PreviewVideo";
 import PlayButton from "../../svg/PlayButton";
 import HeroListItem1 from "../../svg/HeroListItem1";
 import HeroListItem2 from "../../svg/HeroListItem2";
 import HeroListItem3 from "../../svg/HeroListItem3";
 import BgGridSvg from "../../svg/BgGridSvg";
+import heroBG from "../../img/HeroBg.png";
+import client1 from "../../img/Client1.svg";
+import client2 from "../../img/Client2.svg";
+import client3 from "../../img/Client3.svg";
 
 const HomepageHero = observer(
     () => {
@@ -34,9 +34,12 @@ const HomepageHero = observer(
                             <div className="hero__preview">
                                 <div className="preview__clients">
                                     <div className="clients__images">
-                                        <img src={client1} alt="client img" className="client__img"/>
-                                        <img src={client2} alt="client img" className="client__img"/>
-                                        <img src={client3} alt="client img" className="client__img"/>
+                                        <img src={client1} alt="client img"
+                                             className="client__img"/>
+                                        <img src={client2} alt="client img"
+                                             className="client__img"/>
+                                        <img src={client3} alt="client img"
+                                             className="client__img"/>
                                     </div>
                                     <span className="clients__count">
                                     <span>32k+</span>&nbsp;Happy&nbsp;Client
@@ -51,7 +54,7 @@ const HomepageHero = observer(
                             </div>
                         </div>
                         <div className="hero__image" data-aos="fade-left" data-aos-duration="1800">
-                            <img src={heroBg} alt="man in vr glasses"/>
+                            <img src={heroBG} alt="man in vr glasses"/>
                         </div>
                     </div>
                     <ul className="hero__informationList"
