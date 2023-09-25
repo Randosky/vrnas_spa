@@ -12,6 +12,9 @@ import HomepageHowToStart from "./HomepageHowToStart";
 import HomepageTestimonial from "./HomepageTestimonial";
 import HomepagePrice from "./HomepagePrice";
 import HomepagePartners from "./HomepagePartners";
+import HomepageArticles from "./HomepageArticles";
+import HomepageSubscribe from "./HomepageSubscribe";
+import Footer from "../../ui/footer/footer";
 
 const Homepage = observer(() => {
     return (
@@ -25,6 +28,9 @@ const Homepage = observer(() => {
             <HomepageTestimonial/>
             <HomepagePrice/>
             <HomepagePartners/>
+            <HomepageArticles/>
+            <HomepageSubscribe/>
+            <Footer/>
         </main>
     );
 })
